@@ -19,18 +19,18 @@ export const sidemenu = [
   {
     title: "Dashboard",
     item: [
-      { name: "Home", icon: LineStyle },
-      { name: "Analytics", icon: Timeline },
-      { name: "Sales", icon: TrendingUp },
+      { name: "Home", icon: LineStyle, link: "/" },
+      { name: "Analytics", icon: Timeline, link: "/" },
+      { name: "Sales", icon: TrendingUp, link: "/" },
     ],
   },
   {
     title: "Quick Menu",
     item: [
-      { name: "User", icon: PermIdentity },
-      { name: "Product", icon: Storefront },
-      { name: "Transaction", icon: AttachMoney },
-      { name: "Report", icon: DonutLarge },
+      { name: "User", icon: PermIdentity, link: "/users" },
+      { name: "Product", icon: Storefront, link: "/products" },
+      { name: "Transaction", icon: AttachMoney, link: "/transaction" },
+      { name: "Report", icon: DonutLarge, link: "/report" },
     ],
   },
   {

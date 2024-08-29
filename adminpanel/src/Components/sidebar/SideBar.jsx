@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 
 import { sidemenu } from "../Data/data";
 
@@ -16,11 +17,12 @@ function SideBar() {
                   {menu.item.map((item, index) => {
                     return (
                       <>
-                        {" "}
-                        <li className="sidebarListItem" key={index}>
-                          <item.icon className="sidebarIcons" />
-                          {item.name}
-                        </li>
+                        <Link to={item.link} className="links">
+                          <li className="sidebarListItem" key={index}>
+                            <item.icon className="sidebarIcons" />
+                            {item.name}
+                          </li>
+                        </Link>
                       </>
                     );
                   })}
